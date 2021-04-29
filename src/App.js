@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import Todo from './Todo' 
+import Particles from 'react-particles-js';
+import Todo from './Todo'
+
 
 
 
@@ -14,6 +16,24 @@ function App() {
   
     <div>
       <Todo/> 
+      <Particles 
+              params={{
+            		particles: {
+            			line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "#3CA9D1",
+            					blur: 5
+            				}
+            			}
+            		}
+            	}}
+              style={{
+                width: '100%'
+                
+              }}
+            />
+      
     </div>
   );
 }
